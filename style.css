@@ -7,12 +7,17 @@ body {
 }
 /*---------- Header ----------*/
 
+:root {
+    --mainblack: #2d3436;
+    --diffred: #d63031;
+}
+
 
 .topheader {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50px 1fr auto;
-    background-color: #e1b12c;
+    background-image: linear-gradient(to left, var(--mainblack) 10%,grey 90%);
 
 }
 
@@ -24,7 +29,12 @@ body {
     font-size: 3rem;
     text-decoration: none;
     color: white;
-    border: 2px solid #f38a12;
+    //border: 2px solid #ff7675;
+}
+
+
+.main {
+    background-image: linear-gradient(to right, var(--diffred),#ff7675);
 }
 
 
@@ -57,7 +67,7 @@ body {
     cursor: pointer;
     box-shadow: 5px 0 5px 0 rgba(50,50,50, .4);
 
-    height: 50px;
+    height: 70px;
     width: 50px;
 
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -72,7 +82,26 @@ body {
     left: 0px;
 }
 
+.slide > p {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
 /*---------- Content ----------*/
+
+.mainclass {
+    padding-left: 20px;
+}
+
+.bodyopen {
+    padding-left: 300px;
+    transition: .5s ease-in-out;
+}
+
+img {
+    float: left;
+    padding-right: 20px;
+}
 /*---------- Footer ----------*/
 
 .bottomheader {
