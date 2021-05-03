@@ -39,7 +39,7 @@ body {
 
 
 .main {
-    background-color: var(--coolred);
+    background-color: var(--magicpurple);
 }
 
 
@@ -59,8 +59,12 @@ body {
     
 }
 
+.slide > a {
+    text-decoration: none;
+}
+
 .slide span {
-    background-color: #e1b12c;
+    background-color: var(--coolred);
 
     display: flex;
     justify-content: center;
@@ -98,6 +102,7 @@ body {
 
 .mainclass {
     padding-left: 20px;
+    padding-bottom: 40px;
 }
 
 .bodyopen {
