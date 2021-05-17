@@ -120,6 +120,20 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
+h2 {
+    padding-left: 30px;
+}
+
+code {
+    display: block;
+    background: none;
+    white-space: pre;
+    box-decoration-break: clone;
+    padding-left: 10px;
+    border: 2px red solid;
+    color: red;
+}
 /*---------- Footer ----------*/
 
 .bottomheader {
