@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="xyz">
+<html lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +11,12 @@
 </head>
 <body>
  <nav class="slide closed" id=nav>
-    <a href="#bottomlink">TEST</a>
+    <a href="#ABH">Go to first</a>
+    <a href="#YC">Go to second</a>
+    <a href="#QC">Go to third</a>
+    <a href="#BBT">Go to last</a>
      <span id="x"><<</span>
  </nav>
-
-
 
  <header class="topheader">
 
@@ -29,26 +30,36 @@
 
  </header>
 
-
-
 <div class='mainclass' id="mainbody">
 <h1>EPIC SUBPAGE</h1>
 
-
-
 <h2>ABH</h2>
-<p>Accelerated Backwards Hopping or ABH for short, is a glitch in all Source 2013 Singleplayer games. It is most infamous for its extensive usage in Half-Life 2. It was discovered within 24 hours of the release of The Orange Box, in Portal.
+<p id="ABH">Accelerated Backwards Hopping or ABH for short, is a glitch in all Source 2013 Singleplayer games. It is most infamous for its extensive usage in Half-Life 2. It was discovered within 24 hours of the release of The Orange Box, in Portal.
     For some minor history recap; The Orange Box was a collection of games released in 2007, HL2 itself was released in 2004. When HL2 first released, it had forward bunnyhopping like (for example) the old quake games. After the release of The Orange Box, Valve (the developers of Source and the respective games on it) decided to go back and update HL2. With this they patched out bunnyhopping, or so they thought.
     You see, their solution was to apply negative speed to the player when it was detected that the player was jumping with speed over the speedcap. Easy, right?
-    Well, the thing is that since HL2 is a 3D game, the players speed is a three dimensional vector. So if you are looking forwards and jumping above the speedcap you will lose all of your speed completely. However, if you are looking backwards instead, you will literally gain speed. Assumning perfect conditions (angle and timing on the jump) your speed will double with every jump. It takes a skilled player only 7 jumps to go from the walking speed of 250 units per second, to the engine's internal limit of 3500 units per second. For comparsions sake, a real life Jet Plane has a speed of around 10000 units per second.
+    Well, the thing is that HL2 is a 3D game, so the players speed is stored as a three dimensional vector. So if you are looking forwards and jumping above the speedcap you will lose all of your speed completely. However, if you are looking backwards instead, you will literally gain speed. Assuming perfect conditions (angle and timing on the jump) your speed will almost double with every jump. It takes a skilled player only 7 jumps to go from the walking speed of 250 units per second, to the engine's internal limit of 3500 units per second. For comparsion's sake, a real life Jet Plane has a speed of around 10000 units per second. This obviously allows you to cross great distances in a very short time period.
+
+    Due to some other fumbles with vector calculations you can also do a Forwards accleerated hop, but only if time the jump with a S-key tap. 
+
 </p>
 <!------<code><pre>float flSpeedAddition = fabs( mv->m_flForwardMove * flSpeedBoostPerc )</pre></code>-->
 
 <h2>Yesclip</h2>
+<p id="YC">Yesclip is a glitch which is specific to HL2. The name comes from noclip, which is essentially a cheat command that makes you fly. The glitch is that you can fly like in noclip mode, but without activating cheats or the cheat command. So you might be asking, how is this done? It is done by going into a vehicle such as the airboat, and then exiting it at a very specific location. If you didn't know what you were seeing it would seem almost random, but it is fully calculated.  
 
+Now, there's somethings that you need to understand about the game if you want to understand this glitch. Every level in game has a zone called trigger_changelevel. This zone transitions you from level X to level U when you touch it, basically meaning that whenever you touch this zone you 'completed' the level and the game loads the next level. In levels with vehicles there's a zone known as trigger_transition. Normally, whenever you go into a trigger_changelevel the game doesn't keep anything from the previous level except for the player. However when there's a trigger_transition present the game also keeps all entities in the transition zone, and brings it into the next level. This is needed in the game normally so that when you enter a new level whilst in a vehicle you still have the vehicle with you into the next level.
+
+Another thing that the glitch relies is that whilst vehicles in HL2 have animations for entering/exiting them, your position actually gets set the instant you press the button to enter or exit the vehicle. 
+</p>
 <h2>Quickclip</h2>
+<p id="QC">
+    
+</p>
 
-<h2>BBT</h2>
+<h2 >BBT</h2>
+<p id="BBT">
+
+</p>
 
 <p id="bottomlink">computer says NO!</p>
 </div>

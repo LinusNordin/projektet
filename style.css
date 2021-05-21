@@ -46,6 +46,13 @@ body {
 
 /*---------- Nav ----------*/
 
+
+nav > a {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
 .slide {
     background-color: var(--intensegrey);
     width: 300px;
