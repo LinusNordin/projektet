@@ -49,16 +49,33 @@
 
 Now, there's somethings that you need to understand about the game if you want to understand this glitch. Every level in game has a zone called trigger_changelevel. This zone transitions you from level X to level U when you touch it, basically meaning that whenever you touch this zone you 'completed' the level and the game loads the next level. In levels with vehicles there's a zone known as trigger_transition. Normally, whenever you go into a trigger_changelevel the game doesn't keep anything from the previous level except for the player. However when there's a trigger_transition present the game also keeps all entities in the transition zone, and brings it into the next level. This is needed in the game normally so that when you enter a new level whilst in a vehicle you still have the vehicle with you into the next level.
 
-Another thing that the glitch relies is that whilst vehicles in HL2 have animations for entering/exiting them, your position actually gets set the instant you press the button to enter or exit the vehicle. 
+Another thing that the glitch relies is that whilst vehicles in HL2 have animations for entering/exiting them, your position actually gets set the instant you press the button to enter or exit the vehicle. Though, keep in mind that they game will not consider the player actually being outside the vehicle, until the animation is done.
+
+So, onto the actual glitch. The first thing that happens is that the airboat gets put in a specific position, and after putting the boat in that position the player goes back to touch the trigger_changelevel to go back a level. Then, the player can enter the boat and since they put it in that specific position, they will skip touching the other trigger_changelevel with the animation as described earlier. With that set up, they can finally do the actual glitch. 
+The final part is about getting the boat into a even more specific position which makes it so that when you exit it, you will instantly be inside the trigger_changelevel but NOT the trigger_transtion. Since the boat was NOT in the trigger_transition it will get deleted. But here's the important part, the player is still considered as inside the vehicle so the PLAYER also gets deleted.
+
+The game obviously gets very confused by this. First of all, you get noclip for free as said earlier, you cannot switch weapons anymore, and you can't interact with certain types of physics objects.
 </p>
 <h2>Quickclip</h2>
 <p id="QC">
-    
+Quickclip is a glitch that is caused by the Yesclip glitch that was described earlier. Essentially, it causes the player to no longer have proper physics interactions. For example, bullets can't hit you and other projectiles can't hit you either. If you were to try and push a physics object, nothing would happen, the object would act as if it was completely still and solid. If some interaction would occur that normally push the player, the object would just phase through the player instead. 
+
+But how does this benefit as a glitch? Well, it allows for very easy clipping through walls and other objects. For example, if you were to pick up a box, run and jump against a wall, you would teleport through it. You can also stand on a prop to simply clip downwards. 
+
+It's very complicated to explain why you get teleported in this state, but the rundown of it is that the physics engine gets really confused after the player got deleted earlier.
 </p>
 
 <h2 >BBT</h2>
 <p id="BBT">
+Bill's Big Thrill or BBT is a glitch within the physics engine in Source. The name comes from the twitch streamer billthethrill who found it randomly during a casual playthrough of HL2.
 
+It is one of the most bizzare glitches in the game, and it is one of the most complicated glitches in the game, if not the most complicated.
+
+The glitch occurs whenever a physics object is dragged alongst the edge of a sphere, the object will then have a constant velocity. Having a constant velocity that doesn't get affected by anything, means that it will just float away into the nothingness. That part is already weird enough, but if you jump into a object that is in this state whilst crouched, you will also have this property of floating away into the nothingness. But it is sort of controllable, if you uncrouch whilst floating in the glitched state, you will fall down and have normal controls again. 
+
+Another very weird but important aspect of this is after you are back in the normal controls, you still aren't fully normal. The player will have a glitched physics hitbox that stops updating if they crouch again. That means that they can essentialy store their position and speed if they crouch!
+
+This glitch had huge implications for HL2 speedrunning when it was found in 2018. Using this glitch and some other precise movements, speedrunners can skip the 7-minute long cutscene in the start of HL2.
 </p>
 
 <p id="bottomlink">computer says NO!</p>
